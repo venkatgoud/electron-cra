@@ -1,0 +1,35 @@
+{
+  "name": "electron-cra",
+  "version": "0.1.0",
+  "private": true,
+  "description": "create-react-app and Electron boilerplate",
+  "main": "public/electron.js",
+  "author": "Venkat Goud",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-scripts": "1.1.4",
+    "electron-is-dev": "^0.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "electron": "public/electron.js",
+    "electron-dev": "concurrently \"BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\"",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "electron": "^1.8.4",
+    "electron-builder": "^20.10.0",
+    "wait-on": "^2.1.0"
+  },
+  "build": {
+    "appId": "com.venkatgoud.electron.cra",
+    "productName": "Electron-React-CRA"
+  }
+}
