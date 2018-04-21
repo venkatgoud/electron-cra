@@ -2,9 +2,11 @@
   "name": "electron-cra",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
   "description": "create-react-app and Electron boilerplate",
   "main": "public/electron.js",
   "author": "Venkat Goud",
+  "license": "MIT",
   "dependencies": {
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
