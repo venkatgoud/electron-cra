@@ -7,8 +7,8 @@ create-react-app and Electron boilerplate
 # Build react
   npm run build
     
-# Build electron
+# Build electron package
   npm run pack
     
-# Distribution
+# Distribution to create dmg etc.
   npm run dist
